@@ -55,4 +55,146 @@ $\lambda \in \mathbb{R}$. Por lo tanto, $\lambda (x, y, z) \in S$.
 - Si $y_1, y_2 \in S$ entonces $(y_1 + y_2)''- (y_1 + y_2) = (y''_1 −y_1) + (y''_2 −y_2) = 0$. Por tanto, $y_1 + y_2 \in S$.
 - Si $y \in S$ y $\lambda \in \mathbb{R}$ entonces $(\lambda y)'' - \lambda y = \lambda (y''- y) = 0$. Por lo tanto, $\lambda y \in S$.
 
+<iframe scrolling="no" title="Subespacios de dimensión 2 en R^3" src="https://www.geogebra.org/material/iframe/id/hnde2hvd/width/1347/height/560/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1347px" height="560px" style="border:0px;"> </iframe>
 
+## **Suma e intersección de subespacios**
+
+### **Proposición (Intersección de subespacios)**
+
+Sean $U$ y $W$ subespacios vectoriales de $V$.Entonces $U \cap W$ es un subespacio vectorial de V.
+
+**Prueba:**
+
+1. Dado que $0 \in U$ y $0 \in W$ entonces $0 \in U \cap W$;
+
+2. Si $x, y \in U \cap W$ y $\lambda \in \mathbb{R}$ entonces $x + \lambda y \in U$ y $x + \lambda y \in W$. Por lo tanto, $x + \lambda y \in U \cap W$.
+
+#### ***Pregunta***: 
+
+>¿Con la notación de la proposición anterior, podemos afirmar que $U \cup W$ es el subespacio vectorial de V?
+
+#### ***Respuesta***: 
+
+>No. Solo considere $V=\mathbb{R}^2$, $U = \left \{(x, y) \in \mathbb{R}^2; x+y=0 \right \}$ y $W = \left \{(x, y) \in \mathbb{R}^2; x - y = 0\right \}$. Tenga en cuenta que $(1, −1)\in U \subset  U \cup W$ y $(1, 1)$ $\in W \subset U \cup W $ pero $(1, −1) + (1, 1) = (2, 0)$  $\notin U \cup W$.
+
+Si $U$ y $W$ son subespacios vectoriales de un espacio vectorial $V$ y $V'$ es un subespacio vectorial de $V$
+que contiene $U$ y $W$, es decir, $U \cup W \subset V'$, entonces $V'$ tendrá que contener todos los vectores de la forma $u + w$, $u \in U$ y $w \in W$.
+
+### **Definición**
+
+Sean $U$ y $W$ subespacios vectoriales de un espacio vectorial $V$. Definamos la suma de $U$ y $W$ como $U + W = \left \{ u + w; u \in U, w \in W \right \}$.
+
+#### **Proposición (Suma de subespacios)**
+
+Sean $U$, $W$ y $V$ como en la definición anterior. Entonces $U + W$ es un subespacio vectorial de $V$. Además, $U \cup W \subset U + W$.
+
+**Prueba**: 
+
+Vemos que $U + W$ es el subespacio vectorial de $V$.
+
+1. Dado que $0 \in U$ y $0 \in W$ entonces $0 = 0 + 0 \in U + W$;
+2. Sean $x_1, x_2$ $\in U+W$ entonces $x_j = u_j+w_j, u_j \in U, w_j \in W$, j=1,2. Ahora, si $\lambda \in \mathbb{R}$ entonces $x_1 + \lambda x_2 = u_1 + w_1+$ $\lambda(u_2 + w_2) = (u_1+ \lambda u_2) +$ $(w_1 + \lambda w_2) \in U + W$, porque $U$ y $W$ son subespacios vectoriales. 
+
+Vamos a mostrar que $U \cup W \subset U+W$. Sea $u \in U \cup W $ entonces $u=u+0 \in U + W$. Sea $v \in W$ entonces $v=0+v \in U + W$. O sea, $U \cup W \subset U + W$.
+
+Aún usando la notación anterior, suponga que $V'$ sea un subespacio
+de $V$ que contiene $U$ y $W$. En este caso, para todo $u \in U \subset V'$ y todo $w \in W \subset V'$ tenemos $u+w \in V'$, o sea, $U+W \subset V'$. Esta observación nos permite registrar la siguiente proposición.
+
+#### **Proposición**
+
+Sean $V$ un espacio vectorial y $U$ y $W$ subespacios vectoriales de $V$. Entonces $U \cup W \subset U + W \subset V'$.
+
+### **Definición**
+
+Sean $U$ y $W$ subespacios vectoriales de un espacio vectorial $V$. Diremos que $U+W$ es una suma directa de $U$ y $W$ si $U \cap W = \left \{ 0 \right \}$. En este caso usaremos la notación $U \bigoplus W $ para representar $U+W$. 
+
+### **Observación**
+Tenga en cuenta que trivialmente $\left \{ 0 \right \} \subset U \cap W$ si $U$ y $W$ son subespacios vectoriales. 
+
+### **Proposición(Suma directa de subespacios vectoriales)**
+Sean $U$ y $W$ subespacios vectoriales de un espacio vectorial $V$. Tenemos $V=U \bigoplus W$ si y solamente si para cada $v \in V$ solo hay un $u \in U$ y un único $w \in W$ que satisface $v=u+w$.
+
+**Prueba:**
+
+Suponga que $V=U \bigoplus W$, esto es $V=U+W$ y $U \cap W = \left \{ 0 \right \}$. Entonces, dado $v \in V$ existe $u \in U$ y $w \in W$ que satisface $v=u+w$. Queremos mostrar que tal decomposición es única. Suponga que existen $u' \in U$ y $w' \in W$ tal que $v= u' + w'$. Entonces, $u+w=u'+w'$, lo que implica que $u-u' = w' - w$. Pero $u-u' \in U$ y $w' - w \in W$ y por lo tanto, $u - u' =$ $w' - w \in$ $U \cap W = \left \{ 0 \right \}$, o sea $u=u'$ y $w=w'$.
+
+Suponga ahora que para cada $v \in V$ existe un único $u \in U$ y un único $w \in W$ que satisface $v=u+w$. Es claro que $V=U+W$. Queda por demostrar que $U \cap W = \left \{ 0 \right \}$. Obviamente, $0 \in U \cap W$. Sea $v\in U \cap W$, esto es $v \in U$ y $v \in W$. Entonces, existe un único $u\in U$ y un único $w \in W$ que satisface $v= u+w$. Observe que $v=u+w = (u+v) + (w-v)$ con $u+v \in U$ y $w+v \in W$, y por la unicidad de la descomposición, debemos tener $u=u+v$ y $w=w-v$, esto es $v=0$. Luego, $U \cap W = \left \{ 0 \right \}$. 
+
+Alternativamente, podemos asumir la existencia de $v \neq 0$ en $U \cap W$ y luego obtendríamos $v= 2v-v=4v-3v$, 
+dos descomposiciones distintas para $v$
+ya que $2v,4v \in U$, $2v \neq 4v$ y $-v,-3v \in W$. 
+
+#### **EJEMPLO**:
+
+Verifique que $\mathbb{R}^3$ es una suma directa de $U= \left \{   (x,y,z) \in \mathbb{R}^3; x=0 \right \}$  y  $W= \left \{ (x,y,z) \in \mathbb{R}^3; x=y=0 \right \}$
+
+***
+
+**Solución:**
+
+Note que $W$ es de hecho un subespacio vectorial de $\mathbb{R}^3$ porque $W= \left \{ (x,y,z) \in \mathbb{R}^3; x=0 \right \}$ $\cap \left \{   (x,y,z) \in \mathbb{R}^3; y=0 \right \}$ o, alternativamente si $u_1 = (x_1, y_1, z_1)$, $u_2 = (x_2, y_2, z_2) \in W$ entonces $x_1=y_1=x_2=y_2=0$ y $u_1+u_2 = (0,0,z_1+z_2)$ es claramente un elemento de $W$. 
+
+Si $\lambda \in \mathbb{R}$ entonces
+
+$\lambda u_1 = \lambda(0,0,z_1)=(\lambda 0, \lambda 0, \lambda z_1) \in W$. 
+ 
+Finalmente, $(0,0,0) \in W$, 
+lo que concluye la prueba de que $W$ es un subespacio vectorial.
+ 
+Siguiendo, dado $(x,y,z) \in \mathbb{R}^3$ podemos escribir 
+
+$(x,y,z) =(x,y,-x-y)+(0,0,z+x+y)$
+
+y como $(x,y,-x-y) \in U$ y $(0,0,z+x+y) \in W$ obtenemos $\mathbb{R}^3 = U+W$.
+
+Ahora queda demostrar que $U \cap W = \left \{ 0 \right \}$. Sea $(x,y,z) \in U \cap W$. Tenemos 
+
+$\left\{\begin{matrix} x+y+z=0\\ x=0\\ y=0 \end{matrix}\right. \Leftrightarrow (x,y,z)= (0,0,0)$
+
+### **Definición:**
+
+Sean $U_1,...,U_n$ subespacios vectoriales de un espacio vectorial $V$. La suma de $U_1$ a $U_n$ está definida por
+
+$U_1 + ... + U_n = \left \{ u_1+...+u_n; u_j \in U_j, j=1,...,n \right \}$
+
+### **Definición:**
+Sean $U_1,...,U_n$ subespacios vectoriales de un espacio vectorial $V$. Diremos que la suma de $U_1$ a $U_n$ es una suma directa si 
+
+$U_j \cap (U_1+...+\widehat{U_j}+...+U_n) = \left \{ 0 \right \}$, $j=1,...,n$
+
+en el que el término $\widehat{U_j}$ debe omitirse de la suma. En este caso usaremos la notación $U_1 \bigoplus ... \bigoplus U_n$ para denotar la suma de $U_1$ a $U_n$. 
+
+### **Observación:** 
+
+Es obvio que 
+
+$0 \in U_j \cap (U_1 + ... + \widehat{U_j} + ... + U_n)$
+
+si $U_1,...,U_n$ son subespacios vectoriales.
+
+### **Proposición:**
+
+Sean $U_1,...U_n$ subespacios vectoriales de un espacio vectorial $V$. Entonces $V=U_1 \bigoplus ... \bigoplus U_n$ si y solo si para cada $v \in V$ existe, para cada $j=1,...,n$, un único $u_j \in U_j$ tal que $v=u_1+...+u_n$. 
+
+**Prueba:**
+
+La demostración es análoga a la de la proposición de suma directa de subespacios vectoriales.
+
+### **Ejemplo:**
+Demuestre que $\mathbb{P}_2$ es la suma directa de los siguientes subespacios vectoriales $U_1 = \left \{ a_o; a_o \in \mathbb{R} \right \}$, $U_2 = \left \{ a_1x; a_1 \in \mathbb{R} \right \}$ y $U_3 = \left \{ a_2x^2; a_2 \in \mathbb{R} \right \}$.
+
+***
+
+**Solución:**
+
+ Verifiquemos que es una suma directa:
+1. Demostraremos que $U_1 \cap (U_2 + U_3) = \left \{ 0 \right \}$. Sea $p(x) \in U_1 \cap (U_2 + U_3)$. Entonces existen $a_o, a_1,a_2 \in \mathbb{R}$ tales que $p(x) = a0 = a_1x + a_2x^2$. Si $p(x)$ no fuera el polinomio nulo tendríamos un polinomio de grado $0$,
+$a_0$, coincidiendo con un grado de al menos $1$, $a_1x + a_2x^2$, que es un absurdo. Por tanto, $p(x) = 0$.
+
+2. Demostremos que $U_2 \cap (U_1 + U_3) = \left \{ 0 \right \}$. Sea $p(x) \in U_2 \cap (U_1 + U_3)$. Entonces hay $a_0, a_1, a_2 \in \mathbb{R}$ tales que $p(x) = a_1x = a_0 + a_2x^2$. Si $p(x)$ no fuera el polinomio nulo tendriamos un polinomio de grado 1,
+$a_1x$, coincidiendo con uno de grado 0 (caso $a_2 = 0$) o $2$, $a_0 + a_2x^2$,
+(caso $a_2 \neq 0$), lo cual es absurdo. Por tanto, $p(x) = 0$.
+
+3. Demostremos que $U_3 \cap (U_1 + U_2) = \left \{ 0 \right \}$. Sea $p(x) \in U_3 \cap (U_1 + U_2)$. Entonces hay $a_0, a_1, a_2 \in \mathbb{R}$ tales que $p(x) = a_2x^2 = a_0 + a_1x$. Si $p(x)$ no fuera el polinomio nulo tendríamos un polinomio de grado 2,
+$a_2x^2$, coincidiendo con uno de grado 0 (caso $a_1 = 0$) o $1$, $a_0 + a_1x$,
+(caso $a_1 \neq 0$), lo cual es absurdo. Por tanto, $p(x) = 0$.
