@@ -1,0 +1,56 @@
+# Espacios Vectoriales
+
+## **Definición de espacio vectorial**
+
+En álgebra lineal, un espacio vectorial (o también llamado espacio lineal) es una estructura algebraica creada a partir de un conjunto no vacío, una operación interna (llamada suma, definida para los elementos del conjunto) y una operación externa (llamada producto por un escalar, definida entre dicho conjunto y otro conjunto, con estructura de cuerpo) que satisface 8 propiedades fundamentales
+
+
+## **Notación**
+
+Dado un espacio vectorial $V$ sobre un cuerpo $K$, se distinguen los elementos de $V$ y los de $K$.
+
+
++   Los elementos de $V$ suelen denotarse por: $u,v,w$  Y son llamados vectores, dependiendo de las fuentes que se consulten,  tambien es comun denotarlos por: $\vec{u},\vec{v},\vec{w}$
+
++ Mientras que los elementos de $K$ se denotan como: $a,b,c,\beta $
+
+
+## **Definición**
+Un espacio vectorial sobre un cuerpo $K$ (como el cuerpo de los números reales o los números complejos) es un conjunto no vacío, digamos $V$, dotado de dos operaciones:
+
+
++ **Suma** 
+$$(+): \mathbb{R}^2 \times \mathbb{R}^2 \rightarrow \mathbb{R}^2 $$ $$(u,v) \rightarrow u+v$$
+
+Operación interna tal que:
+
+
+>*   Tenga la **propiedad conmutativa**
+$$u+v = v+u , \phantom{abc} \forall \phantom{a} u,v \in V$$
+
+>*   Tenga la **propiedad asociativa**
+$$u+(v+w) = (u+v)+w, \phantom{abc} \forall \phantom{a} u,v,w \in V $$
+
+>*   Exista el **elemento neutro**
+$$\exists\phantom{a} e \in V: u+e=u,\phantom{abc} \forall \phantom{a} u \in V$$
+
+>*   Exista el **elemento opuesto**
+$$\forall  u \in V, \phantom {abc} \exists -u\in V: u+(-u)=e = 0 $$
+
++ **Multiplicacipon por escalar**
+$$ (\cdot): \mathbb{R} \times \mathbb{R}^2 \rightarrow \mathbb{R}^2$$   $$(\lambda,v) \rightarrow \lambda \cdot v$$
+
+
+operación externa tal que:
+
+>*   Tenga la **propiedad asociativa**
+$$a \cdot (b\cdot u) = (a\cdot b)\cdot u, \phantom{abc} \forall \phantom{a} a,b \in K, \forall \phantom{a} u \in V $$
+
+>*   Tenga la **propiedad distributiva** respecto a la **suma vectorial**
+$$a \cdot (u+v) = a \cdot u +a \cdot v, \phantom{abc} \forall \phantom{a} a \in K, \forall \phantom{a} u,v \in V $$
+
+>*   Exista el **elemento distributiva** respecto a la **suma escalar** 
+$$(a+b)\cdot u =a \cdot u + b \cdot u, \phantom{abc} \forall \phantom{a} a, b \in K, \forall \phantom{a} u \in V $$
+
+>*   Exista el **elemento neutro**
+$$\exists e \in K: e \cdot u =u, \phantom{abc} \forall \phantom{a} u \in V $$

@@ -1,0 +1,32 @@
+--- 
+title: "Virtual Book of MAC"
+author: ""
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  Este es un libro virtual para el curso de Matemática Aplicada a la Computación, curso de la carrera de la Escuela Profesional de Ciencia de la Computación, de la Universidad Nacional de San Agustín. 
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# About
+
+Este es un libro virtual para el curso de Matemática Aplicada a la Computación, curso de la carrera de la Escuela Profesional de Ciencia de la Computación, de la Universidad Nacional de San Agustín.
+
+## Equipo
+
+- Luis Felipe Sante Taipe
+- Angel Tomas Concha Layme
+- Maryori Lizeth Hilares Angelo
+- Paul Jesus Quispe Morocco
+- Fernanda Anthoanette Paredes Escobedo
+- Vanesa Mayra Macedo Huamán
+
+## Docente
+
+Dra. Judith Hayde Cruz Torres
+

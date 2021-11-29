@@ -1,0 +1,58 @@
+# Subespacios Vectoriales
+## **Definición**
+
+Sea $V$ un espacio vectorial. Decimos que $W \subset  V$ es un
+subespacio vectorial de $V$ si se cumplen las siguientes condiciones:
+
+> (1) $0 \in W$;
+>
+> (2) Si $u, v \in W$ entonces $u + v \in W$;
+>
+> (3) Si $u \in W$ entonces $\lambda u \in W$ para todo $\lambda \in \mathbb{R}.$
+>
+
+<iframe scrolling="no" title="Sub Espacios Vectoriales - Teorema 5.2.1" src="https://www.geogebra.org/material/iframe/id/hrxvnfer/width/1920/height/980/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1920px" height="980px" style="border:0px;"> </iframe>
+
+### **Observaciones**
+1. Tenga en cuenta que todo subespacio vectorial $W$ de un espacio vectorial $V$ es en sí mismo un espacio vectorial. Las propiedades conmutativa, asociativa, distributiva y $1u = u$ para todo $u \in V$ se heredan del propio espacio vectorial $V$. El elemento neutro de adición es un elemento de $W$ por (1). Finalmente, si $u \in W$ entonces $−u = (−1) u \in W$ debido a que para cualquier $\lambda \in \mathbb{R}$ y $u \in V$, $(−λ)u = λ(−u) = −(λu)$ y por (3)
+
+2. Obviamente, ${0}$ y $V$ son subespacios vectoriales del espacio vectorial $V$. Se denominan subespacios vectoriales triviales.
+
+3. Tenga en cuenta que $W$ es el subespacio vectorial de $V$ si y solo si se cumplen las siguientes condiciones:
+
+> (1') $0 \in W$
+>
+> (2') Si $u, v \in W$  y $\lambda \in R$ entonces $u + \lambda v \in W$.
+
+### Ejemplos:
+
+1. Sea $\mathbb{P}^*_n \subset \mathbb{P}_n$, dado por $\mathbb{P}^*_n = {p(x) \in \mathbb{P}_n;p(0)=0}$. Compruebe que $\mathbb{P}^*_n$, es, de hecho, un espacio vectorial de $\mathbb{P}_n$.
+
+**Solución:**
+
+- El polinomio nulo desaparece en $x=0$, por lo que pertenece a $\mathbb{P}^*_n$
+
+- Si $p(x), q(x) \in \mathbb{P}^*_n$ entonces $p(0)+q(0)=0$ y por lo tanto $p(x) + q(x) \in \mathbb{P}^*_n$
+
+- Si $p(x) \in \mathbb{P}^*_n$ entonces $\lambda p(0) = 0$ para cualquier $\lambda \in \mathbb{R}$. Por lo tanto $\lambda p(x) \in \mathbb{P}^*_n$
+ 
+***
+2. Comprueba que $S={(x,y,z) \in \mathbb{R}^3; x+y+z=0}$ es un subespacio vectorial de $\mathbb{R}^3$
+ 
+**Solución:**
+
+- Es claro que $(0,0,0)$ satisface $0+0+0=0$
+- Si $(x, y, z)$, $(u, v, w)$ $\in S$ entonces $(x + u) + (y + v) + (z + w)$ $=$ $(x + y + z) + (u + v + w) = 0$ y por lo tanto $(x, y, z) + (u, v, w)$ $\in S$.
+- Si $(x, y, z) \in S$ entonces $\lambda x + \lambda y + \lambda z$ $= \lambda (x + y + z) = 0$ para cualquier
+$\lambda \in \mathbb{R}$. Por lo tanto, $\lambda (x, y, z) \in S$.
+
+***
+3. Considere el siguiente conjunto $S = {y \in \mathbb{C}^2(\mathbb{R}; \mathbb{R}); y'' − y = 0}$ donde $y''$ representa la derivada de segundo orden de $y$. Comprobar que que $S$ sea un subespacio vectorial de $\mathbb{C}^2(\mathbb{R}; \mathbb{R})$.
+
+**Solución:**
+
+- Claramente, la función nula satisface $0''-0 = 0$
+- Si $y_1, y_2 \in S$ entonces $(y_1 + y_2)''- (y_1 + y_2) = (y''_1 −y_1) + (y''_2 −y_2) = 0$. Por tanto, $y_1 + y_2 \in S$.
+- Si $y \in S$ y $\lambda \in \mathbb{R}$ entonces $(\lambda y)'' - \lambda y = \lambda (y''- y) = 0$. Por lo tanto, $\lambda y \in S$.
+
+

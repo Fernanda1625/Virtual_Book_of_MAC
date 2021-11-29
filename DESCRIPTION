@@ -1,0 +1,7 @@
+Package: placeholder
+Type: Book
+Title: Virtual Book of MAC
+Version: 0.0.1
+Imports: bookdown, ggplot2
+Remotes: rstudio/bookdown
+Corro la construccion
