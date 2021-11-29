@@ -1,2 +1,173 @@
 # Independencia, Base y Dimensión
 
+##**1. Independencia Linear**
+
+Recordemos que un espacio vectorial es conjunto $V$ en el cual tenemos dos operaciones suma y multiplicación por escalar, que satisfacen las mismas propiedades se cumplen para la suma y producto por escalar en $\mathbb{R}^{n}$.
+
+### **Definicion** 
+Un conjunto de vectores $\left \{ v_{1}, v_{2}, ...,v_{n}\right \}$ de un espacio vectorial $V$ es linealmente dependiente $(L.D.)$ si existen escalares $ \alpha _{1}, \alpha _{2},...,\alpha _{n}$, donde al menos uno de los cuales no sea cero, tal que
+
+$$\alpha _{1}v_{1}+\alpha _{2}v_{2}+ ... +\alpha _{n}v_{n}=0$$
+
+Un conjunto de vectores que no es linealmente dependiente se dice que es linealmente independiente$(L.I.)$. De forma explícita, un conjunto de vectores $\left \{ v_{1}, v_{2}, ...,v_{n}\right \}$ de un espacio vectorial $V$ es linealmente independiente si la unica solución del sistema de ecuaciones
+
+$$\alpha _{1}v_{1}+\alpha _{2}v_{2}+ ... +\alpha _{n}v_{n}=0$$
+
+es la solución trivial $\alpha _{1}=0,\alpha _{2}=0,...,\alpha _{n}=0$.
+
+### **Teorema** 
+Un conjunto de vectores $\left \{ v_{1}, v_{2}, ...,v_{n}\right \}$ de un espacio vectorial $V$ es literalmente dependiente $(L.D.)$ si y sólo si al menos uno de los vectores puede ser expresado como combinación lineal de otros
+
+###**EJERCICIOS**
+
+Compruebe en cada uno de los siguientes puntos, si el subconjunto $S$ del espacio vectorial $V$ es $L.I.$ o $L.D.$
+**1.**
+$S = \left \{( 1, 2 ), ( -3, 1 )\right \},V=\mathbb{R} ^{2}$
+
+$\alpha _{1}\left ( 1,2 \right )+\alpha _{2}\left ( -3,1 \right )=\left ( 0,0 \right )$
+
+$\left ( \alpha _{1},2\alpha _{1} \right )+\left ( -3\alpha _{2},\alpha _{2} \right )=\left ( 0,0 \right )$
+
+$ \left\lbrace\begin{array}{c} \alpha_{1}-3\alpha_{2} = 0 \\ 2\alpha_{1} + \alpha_{2} = 0  \end{array}\right. $
+
+$\begin{bmatrix}
+1 & -3\\ 
+2 & 1
+\end{bmatrix} \begin{bmatrix}
+\alpha _{1}\\ 
+\alpha _{2}
+\end{bmatrix} 
+=\begin{bmatrix} 
+0 \\
+0 \end{bmatrix}$
+
+$det\begin{bmatrix}
+1 & -3\\ 
+2 & 1
+\end{bmatrix}\\
+\left ( 1*1 \right )-\left ( \left ( -3 \right )*2 \right )\\
+1-\left ( -6 \right )\\
+1+6=7$
+
+Como el determinante es igual a $7\neq 0$, por lo tanto la matriz es inversible. Con lo cual el sistema homogéneo tiene solución única: 
+
+$\alpha _{1} = \alpha _{2} = 0$, el conjunto es Linealmente Independiente.
+
+---
+**2.**
+$S=\left\{1+t-t^{2},2+5t-9t^{2}\right\},V=\mathit{P_{2}}\left ( \mathbb{R} \right )$
+
+$\alpha _{1}(1+t-t^{2})+ \alpha_2(2+5t-9t^{2})=0=0t^{2}+0t+0\left ( 1 \right )$
+
+$\left ( \alpha_{1}+\alpha_{1}t-\alpha_{1}t^{2} \right )+\left ( 2\alpha_{2}+5\alpha_{2}t-9\alpha_{2}t^{2} \right )=0$
+
+$\left ( -\alpha_{1}-9\alpha_{2} \right )t^{2}+\left ( \alpha_{1}+5\alpha_{2} \right )t+\left ( \alpha_{1}+2\alpha_{2} \right ) = 0$
+
+Asi obtenemos el siguiente sistema de ecuaciones:
+
+$\left\{\begin{matrix}
+-\alpha_{1}-9\alpha_{2}=0\left ( \mathit{e_{1}} \right )\\ 
+\alpha_{1}+5\alpha_{2}=0\left ( \mathit{e_{2}} \right )\\ 
+\alpha_{1}+2\alpha_{2}=0\left ( \mathit{e_{3}} \right )
+\end{matrix}\right.$
+
+Resolviendo $\mathit{e_{1}}$, tenemos:
+
+$-\alpha_{1}-9\alpha_{2}=0\\
+\alpha_{1}=-9\alpha_{2}$
+
+Reemplazando en $\mathit{e_{2}}$ :
+
+$-9\alpha_{2}+5\alpha_{2}=0\\
+-4\alpha_{2}=0\\
+\alpha_{2}=0$
+
+Reemplazando nuevamente:
+
+$\alpha_{1}=-9\alpha_{2}\\
+\alpha_{1}=0$
+
+Como hemos obtenido de resultado:
+ $\alpha_{1}=\alpha_{2}=0$, como solución unica, el conjunto es Linealmente Independiente.
+
+---
+**3.**
+$S=\left \{ \begin{pmatrix}
+-1 & 1\\ 
+0 & 0
+\end{pmatrix},\begin{pmatrix}
+2 & 0\\ 
+-1 & 0
+\end{pmatrix} \right \},V=M_{2}$
+
+$\alpha_{1}\begin{pmatrix}
+-1 & 1\\ 
+0 & 0
+\end{pmatrix}+\alpha_{2}\begin{pmatrix}
+2 & 0\\ 
+-1 & 0
+\end{pmatrix} =\begin{pmatrix}
+0 & 0\\ 
+0 & 0
+\end{pmatrix}$
+
+$\begin{pmatrix}
+-\alpha_{1}+2\alpha_{2} & \alpha_{1}\\ 
+-\alpha_{2} & 0
+\end{pmatrix} =\begin{pmatrix}
+0 & 0\\ 
+0 & 0
+\end{pmatrix}$
+
+Así obtenemos el siguiente sistema de ecuaciones:
+
+$\left\{\begin{matrix}
+-\alpha_{1}+2\alpha_{2}=0\left ( \mathit{e_{1}} \right )\\
+\alpha_{1}=0\left ( \mathit{e_{2}} \right )\\ 
+-\alpha_{2}=0\left ( \mathit{e_{3}} \right )
+\end{matrix}\right.$
+
+Resolviendo $\mathit{e_{3}}$, obtenemos:
+
+$-\alpha_{2}=0\\
+\alpha_{2}=0$
+
+Como hemos obtenido de resultado:
+ $\alpha_{1}=\alpha_{2}=0$, como solución unica, el conjunto es Linealmente Independiente.
+
+---
+**4.**
+$S=\left \{ \left ( 1,2,2,-3 \right ),\left ( -1,4,-2,0 \right ) \right \},V=\mathbb{R}^{4}$
+
+$\alpha_{1}\left ( 1,2,2,-3 \right )+\alpha_{2}\left ( -1,4-2,0 \right )=\left ( 0,0,0,0 \right )$
+
+$\left ( \alpha_{1},2\alpha_{1},2\alpha_{1},-3\alpha_{1} \right )+\left ( -\alpha_{2},4\alpha_{2},-2\alpha_{2},0 \right )=\left ( 0,0,0,0 \right )$
+
+$\left ( \alpha_{1}-\alpha_{2},2\alpha_{1}+4\alpha_{2},2\alpha_{1}-2\alpha_{2},-3\alpha_{1} \right )=\left ( 0,0,0,0 \right )$
+
+Así obtenemos el siguiente sistema de ecuaciones:
+
+$\left\{\begin{matrix}
+\alpha_{1}-\alpha_{2}=0\left ( \mathit{e_{1}} \right )\\
+2\alpha_{1}+4\alpha_{2}=0\left ( \mathit{e_{2}} \right )\\
+2\alpha_{1}-2\alpha_{2}=0\left ( \mathit{e_{3}} \right )\\
+-3\alpha_{1}=0\left ( \mathit{e_{4}} \right )
+\end{matrix}\right.$
+
+Resolviendo $\mathit{e_{4}}$, tenemos:
+
+$-3\alpha_{1}=0\\
+\alpha_{1}=0$
+
+Resolviendo $\mathit{e_{1}}$, tenemos:
+
+$\alpha_{1}-\alpha_{2}=0\\
+\alpha_{1}=\alpha_{2}$
+
+Reemplazando, obtenemos:
+
+$\alpha_{1}=\alpha_{2}\\
+\alpha_{2}=0$
+
+Como hemos obtenido de resultado:
+ $\alpha_{1}=\alpha_{2}=0$, como solución unica, el conjunto es Linealmente Independiente.

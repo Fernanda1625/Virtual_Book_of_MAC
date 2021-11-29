@@ -26,5 +26,7 @@ observación-1
 proposición-1
 ejemplo-1
 independencia-base-y-dimensión
+definicion
+teorema
 espacios-con-producto-interno
 bases-ortogonales-y-proyecciones
